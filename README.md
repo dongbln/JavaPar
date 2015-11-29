@@ -19,7 +19,7 @@ public class HomeFeed2ControllerTest extends WithApplication {
     public void testHomefeed() throws Exception {
         Http.RequestBuilder request = new Http.RequestBuilder()
                 .method(GET)
-                .uri("/homefeed")
+                .uri("/myPath")
                 .header("X-Customer-Id","4f11e0df-f127-4812-abc6-356b139693f4");
 
         Result result = route(request);
