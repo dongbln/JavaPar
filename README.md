@@ -50,8 +50,8 @@ javaOptions in Test ++= Seq(
 )
 ```
 
-## Search service optimization
-There are many approaches to optimize  Cassandra queries and to run tasks in parallel.
+
+## Approaches to optimize  Cassandra queries and to run tasks in parallel.
 ### Example 1: Using Java futures
 
 ```java
