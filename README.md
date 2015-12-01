@@ -13,7 +13,7 @@ import play.test.WithApplication;
 import static org.junit.Assert.*;
 import static play.test.Helpers.*;
 
-public class HomeFeed2ControllerTest extends WithApplication {
+public class MyControllerTest extends WithApplication {
 
     @Test
     public void testHomefeed() throws Exception {
@@ -24,8 +24,8 @@ public class HomeFeed2ControllerTest extends WithApplication {
 
         Result result = route(request);
         assertEquals(OK, result.status());
-        assertTrue(contentAsString(result).contains("likedBy"));
-        assertTrue(contentAsString(result).contains("likedAt"));
+        assertTrue(contentAsString(result).contains("Hello"));
+        assertTrue(contentAsString(result).contains("Here"));
   
         }
     }
